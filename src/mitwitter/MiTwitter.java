@@ -1,33 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package mitwitter;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterFactory;
 import twitter4j.conf.ConfigurationBuilder;
 
-/**
- *
- * @author mmoureperez
- */
 public class MiTwitter {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
         Twitter miTwitter= new TwitterFactory().getInstance();
         ConfigurationBuilder cb = new ConfigurationBuilder();
     cb.setDebugEnabled(true)
-  .setOAuthConsumerKey("*********************")
-  .setOAuthConsumerSecret("******************************************")
-  .setOAuthAccessToken("**************************************************")
-  .setOAuthAccessTokenSecret("******************************************");
+  .setOAuthConsumerKey("ynUDdkF6L4ul98GQeWeFARS9p")
+  .setOAuthConsumerSecret(" 5ibEyyvsuLf1Zxmye6t9DMT7b38WnB6qUXehis2fJgDiYHIcxx")
+  .setOAuthAccessToken("562356095-3heHhppXAbAXmiEBqZzLm8sRMvGeHMSBqWI3BUGV")
+  .setOAuthAccessTokenSecret("iOAIk1ubWqBb939YtmdDmQ1rlmMxqFeAiXEtVjJBvpB5n");
 TwitterFactory tf = new TwitterFactory(cb.build());
 Twitter twitter = tf.getInstance();
     }
